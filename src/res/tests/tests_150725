@@ -1,0 +1,333 @@
+python3 dbread.py . sequence_ecolik12.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_0.txt` > tests/k12_palier2_test_0.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_0.txt` > tests/k12_palier4_test_0.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_1.txt` > tests/k12_palier2_test_1.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_1.txt` > tests/k12_palier4_test_1.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_2.txt` > tests/k12_palier2_test_2.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_2.txt` > tests/k12_palier4_test_2.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_3.txt` > tests/k12_palier2_test_3.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_3.txt` > tests/k12_palier4_test_3.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_4.txt` > tests/k12_palier2_test_4.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_4.txt` > tests/k12_palier4_test_4.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_5.txt` > tests/k12_palier2_test_5.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_5.txt` > tests/k12_palier4_test_5.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_6.txt` > tests/k12_palier2_test_6.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_6.txt` > tests/k12_palier4_test_6.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_7.txt` > tests/k12_palier2_test_7.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_7.txt` > tests/k12_palier4_test_7.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_8.txt` > tests/k12_palier2_test_8.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_8.txt` > tests/k12_palier4_test_8.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_9.txt` > tests/k12_palier2_test_9.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_9.txt` > tests/k12_palier4_test_9.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_10.txt` > tests/k12_palier2_test_10.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_10.txt` > tests/k12_palier4_test_10.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_11.txt` > tests/k12_palier2_test_11.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_11.txt` > tests/k12_palier4_test_11.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_12.txt` > tests/k12_palier2_test_12.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_12.txt` > tests/k12_palier4_test_12.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_13.txt` > tests/k12_palier2_test_13.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_13.txt` > tests/k12_palier4_test_13.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_14.txt` > tests/k12_palier2_test_14.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_14.txt` > tests/k12_palier4_test_14.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_15.txt` > tests/k12_palier2_test_15.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_15.txt` > tests/k12_palier4_test_15.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_16.txt` > tests/k12_palier2_test_16.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_16.txt` > tests/k12_palier4_test_16.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_17.txt` > tests/k12_palier2_test_17.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_17.txt` > tests/k12_palier4_test_17.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_18.txt` > tests/k12_palier2_test_18.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_18.txt` > tests/k12_palier4_test_18.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_19.txt` > tests/k12_palier2_test_19.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_19.txt` > tests/k12_palier4_test_19.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_20.txt` > tests/k12_palier2_test_20.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_20.txt` > tests/k12_palier4_test_20.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_21.txt` > tests/k12_palier2_test_21.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_21.txt` > tests/k12_palier4_test_21.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_22.txt` > tests/k12_palier2_test_22.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_22.txt` > tests/k12_palier4_test_22.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_23.txt` > tests/k12_palier2_test_23.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_23.txt` > tests/k12_palier4_test_23.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_24.txt` > tests/k12_palier2_test_24.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_24.txt` > tests/k12_palier4_test_24.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_25.txt` > tests/k12_palier2_test_25.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_25.txt` > tests/k12_palier4_test_25.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_26.txt` > tests/k12_palier2_test_26.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_26.txt` > tests/k12_palier4_test_26.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_27.txt` > tests/k12_palier2_test_27.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_27.txt` > tests/k12_palier4_test_27.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_28.txt` > tests/k12_palier2_test_28.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_28.txt` > tests/k12_palier4_test_28.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_29.txt` > tests/k12_palier2_test_29.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_29.txt` > tests/k12_palier4_test_29.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_30.txt` > tests/k12_palier2_test_30.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_30.txt` > tests/k12_palier4_test_30.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_31.txt` > tests/k12_palier2_test_31.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_31.txt` > tests/k12_palier4_test_31.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_32.txt` > tests/k12_palier2_test_32.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_32.txt` > tests/k12_palier4_test_32.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_33.txt` > tests/k12_palier2_test_33.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_33.txt` > tests/k12_palier4_test_33.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_34.txt` > tests/k12_palier2_test_34.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_34.txt` > tests/k12_palier4_test_34.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_35.txt` > tests/k12_palier2_test_35.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_35.txt` > tests/k12_palier4_test_35.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_36.txt` > tests/k12_palier2_test_36.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_36.txt` > tests/k12_palier4_test_36.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_37.txt` > tests/k12_palier2_test_37.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_37.txt` > tests/k12_palier4_test_37.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_38.txt` > tests/k12_palier2_test_38.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_38.txt` > tests/k12_palier4_test_38.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_39.txt` > tests/k12_palier2_test_39.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_39.txt` > tests/k12_palier4_test_39.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_40.txt` > tests/k12_palier2_test_40.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_40.txt` > tests/k12_palier4_test_40.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_41.txt` > tests/k12_palier2_test_41.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_41.txt` > tests/k12_palier4_test_41.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_42.txt` > tests/k12_palier2_test_42.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_42.txt` > tests/k12_palier4_test_42.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_43.txt` > tests/k12_palier2_test_43.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_43.txt` > tests/k12_palier4_test_43.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_44.txt` > tests/k12_palier2_test_44.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_44.txt` > tests/k12_palier4_test_44.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_45.txt` > tests/k12_palier2_test_45.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_45.txt` > tests/k12_palier4_test_45.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_46.txt` > tests/k12_palier2_test_46.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_46.txt` > tests/k12_palier4_test_46.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_47.txt` > tests/k12_palier2_test_47.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_47.txt` > tests/k12_palier4_test_47.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_48.txt` > tests/k12_palier2_test_48.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_48.txt` > tests/k12_palier4_test_48.txt
+python3 dbalign.py sequence_ecolik12.txt.fasta `tail -n 1 tests/sequence_ecolik12.txt_test_49.txt` > tests/k12_palier2_test_49.txt
+python3 myblast.py . sequence_ecolik12.txt `tail -n 1 tests/sequence_ecolik12.txt_test_49.txt` > tests/k12_palier4_test_49.txt
+python3 alignstats.py 4315 4025874 TGGCGATAATCTGGGTACTGACCAGCCTGGTAATTTGCGTAATGAATATCGGGCAACTTCCCC 1,-2 63 all
+1.33 1.12 0.62 1.19 0.00 185971198 4e-29 121
+python3 alignstats.py 4315 4025874 TGGCGATAATCTGGGTACTGACCAGCCTGGTAATTTGCGTAATGAATATCGGGCAACTTCCCC 1,-1 63 all
+1.10 0.55 0.33 2.00 -2.00 132625126 4e-23 101
+python3 alignstats.py 4315 4025874 TGGCGATAATCTGGGTACTGACCAGCCTGGTAATTTGCGTAATGAATATCGGGCAACTTCCCC 1,-3 63 all
+1.37 1.31 0.71 1.05 0.00 194307736 4e-30 125
+python3 alignstats.py 4315 4025874 TGGCGATAATCTGGGTACTGACCAGCCTGGTAATTTGCGTAATGAATATCGGGCAACTTCCCC 1,-4 63 all
+1.38 1.36 0.74 1.02 0.00 198488950 2e-30 126
+python3 dbalign.py sequence_ecolik12.txt.fasta TGGCGATAATCTGGGTACTGACCAGCCTGGTAATTTGCGTAATGAATATCGGGCAACTTCCCC > tests/k12_palier2_ex.txt
+python3 myblast.py . sequence_ecolik12.txt TGGCGATAATCTGGGTACTGACCAGCCTGGTAATTTGCGTAATGAATATCGGGCAACTTCCCC > tests/k12_palier4_ex.txt
+python3 dbread.py . 18S_fungal_sequences
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_0.txt` > tests/18S_palier2_test_0.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_0.txt` > tests/18S_palier4_test_0.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_1.txt` > tests/18S_palier2_test_1.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_1.txt` > tests/18S_palier4_test_1.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_2.txt` > tests/18S_palier2_test_2.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_2.txt` > tests/18S_palier4_test_2.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_3.txt` > tests/18S_palier2_test_3.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_3.txt` > tests/18S_palier4_test_3.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_4.txt` > tests/18S_palier2_test_4.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_4.txt` > tests/18S_palier4_test_4.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_5.txt` > tests/18S_palier2_test_5.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_5.txt` > tests/18S_palier4_test_5.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_6.txt` > tests/18S_palier2_test_6.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_6.txt` > tests/18S_palier4_test_6.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_7.txt` > tests/18S_palier2_test_7.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_7.txt` > tests/18S_palier4_test_7.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_8.txt` > tests/18S_palier2_test_8.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_8.txt` > tests/18S_palier4_test_8.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_9.txt` > tests/18S_palier2_test_9.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_9.txt` > tests/18S_palier4_test_9.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_10.txt` > tests/18S_palier2_test_10.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_10.txt` > tests/18S_palier4_test_10.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_11.txt` > tests/18S_palier2_test_11.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_11.txt` > tests/18S_palier4_test_11.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_12.txt` > tests/18S_palier2_test_12.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_12.txt` > tests/18S_palier4_test_12.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_13.txt` > tests/18S_palier2_test_13.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_13.txt` > tests/18S_palier4_test_13.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_14.txt` > tests/18S_palier2_test_14.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_14.txt` > tests/18S_palier4_test_14.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_15.txt` > tests/18S_palier2_test_15.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_15.txt` > tests/18S_palier4_test_15.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_16.txt` > tests/18S_palier2_test_16.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_16.txt` > tests/18S_palier4_test_16.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_17.txt` > tests/18S_palier2_test_17.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_17.txt` > tests/18S_palier4_test_17.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_18.txt` > tests/18S_palier2_test_18.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_18.txt` > tests/18S_palier4_test_18.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_19.txt` > tests/18S_palier2_test_19.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_19.txt` > tests/18S_palier4_test_19.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_20.txt` > tests/18S_palier2_test_20.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_20.txt` > tests/18S_palier4_test_20.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_21.txt` > tests/18S_palier2_test_21.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_21.txt` > tests/18S_palier4_test_21.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_22.txt` > tests/18S_palier2_test_22.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_22.txt` > tests/18S_palier4_test_22.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_23.txt` > tests/18S_palier2_test_23.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_23.txt` > tests/18S_palier4_test_23.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_24.txt` > tests/18S_palier2_test_24.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_24.txt` > tests/18S_palier4_test_24.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_25.txt` > tests/18S_palier2_test_25.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_25.txt` > tests/18S_palier4_test_25.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_26.txt` > tests/18S_palier2_test_26.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_26.txt` > tests/18S_palier4_test_26.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_27.txt` > tests/18S_palier2_test_27.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_27.txt` > tests/18S_palier4_test_27.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_28.txt` > tests/18S_palier2_test_28.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_28.txt` > tests/18S_palier4_test_28.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_29.txt` > tests/18S_palier2_test_29.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_29.txt` > tests/18S_palier4_test_29.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_30.txt` > tests/18S_palier2_test_30.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_30.txt` > tests/18S_palier4_test_30.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_31.txt` > tests/18S_palier2_test_31.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_31.txt` > tests/18S_palier4_test_31.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_32.txt` > tests/18S_palier2_test_32.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_32.txt` > tests/18S_palier4_test_32.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_33.txt` > tests/18S_palier2_test_33.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_33.txt` > tests/18S_palier4_test_33.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_34.txt` > tests/18S_palier2_test_34.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_34.txt` > tests/18S_palier4_test_34.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_35.txt` > tests/18S_palier2_test_35.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_35.txt` > tests/18S_palier4_test_35.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_36.txt` > tests/18S_palier2_test_36.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_36.txt` > tests/18S_palier4_test_36.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_37.txt` > tests/18S_palier2_test_37.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_37.txt` > tests/18S_palier4_test_37.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_38.txt` > tests/18S_palier2_test_38.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_38.txt` > tests/18S_palier4_test_38.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_39.txt` > tests/18S_palier2_test_39.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_39.txt` > tests/18S_palier4_test_39.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_40.txt` > tests/18S_palier2_test_40.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_40.txt` > tests/18S_palier4_test_40.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_41.txt` > tests/18S_palier2_test_41.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_41.txt` > tests/18S_palier4_test_41.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_42.txt` > tests/18S_palier2_test_42.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_42.txt` > tests/18S_palier4_test_42.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_43.txt` > tests/18S_palier2_test_43.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_43.txt` > tests/18S_palier4_test_43.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_44.txt` > tests/18S_palier2_test_44.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_44.txt` > tests/18S_palier4_test_44.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_45.txt` > tests/18S_palier2_test_45.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_45.txt` > tests/18S_palier4_test_45.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_46.txt` > tests/18S_palier2_test_46.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_46.txt` > tests/18S_palier4_test_46.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_47.txt` > tests/18S_palier2_test_47.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_47.txt` > tests/18S_palier4_test_47.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_48.txt` > tests/18S_palier2_test_48.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_48.txt` > tests/18S_palier4_test_48.txt
+python3 dbalign.py 18S_fungal_sequences.fasta `tail -n 1 tests/18S_fungal_sequences_test_49.txt` > tests/18S_palier2_test_49.txt
+python3 myblast.py . 18S_fungal_sequences `tail -n 1 tests/18S_fungal_sequences_test_49.txt` > tests/18S_palier4_test_49.txt
+python3 alignstats.py 3692 4921262 TATTTATTAGATCCAAAACCAACGAGGGCAACCTCTTACTTGGTGATTCATAATAACTTTTCGAATCGTTGGGCCTTGCGCCAGCGATGGGTCATTCAAATTTCTGCCCTATCAACTGTCGATGGTAGGATAGAGGCCTA 1,-2 57 all
+1.33 1.12 0.62 1.19 0.00 597595254 4e-25 110
+python3 alignstats.py 3692 4921262 TATTTATTAGATCCAAAACCAACGAGGGCAACCTCTTACTTGGTGATTCATAATAACTTTTCGAATCGTTGGGCCTTGCGCCAGCGATGGGTCATTCAAATTTCTGCCCTATCAACTGTCGATGGTAGGATAGAGGCCTA 1,-2 57 all
+1.10 0.55 0.33 2.00 -2.00 518736744 2e-12 68
+python3 alignstats.py 3692 4921262 TATTTATTAGATCCAAAACCAACGAGGGCAACCTCTTACTTGGTGATTCATAATAACTTTTCGAATCGTTGGGCCTTGCGCCAGCGATGGGTCATTCAAATTTCTGCCCTATCAACTGTCGATGGTAGGATAGAGGCCTA 1,-3 54 all
+1.37 1.31 0.71 1.05 0.00 608235250 3e-24 107
+python3 alignstats.py 3692 4921262 TATTTATTAGATCCAAAACCAACGAGGGCAACCTCTTACTTGGTGATTCATAATAACTTTTCGAATCGTTGGGCCTTGCGCCAGCGATGGGTCATTCAAATTTCTGCCCTATCAACTGTCGATGGTAGGATAGAGGCCTA 1,-4 28 all
+1.38 1.36 0.74 1.02 0.00 613566324 7e-09 56
+python3 dbalign.py 18S_fungal_sequences.fasta TATTTATTAGATCCAAAACCAACGAGGGCAACCTCTTACTTGGTGATTCATAATAACTTTTCGAATC > tests/18S_palier2_ex.txt
+python3 myblast.py . 18S_fungal_sequences TATTTATTAGATCCAAAACCAACGAGGGCAACCTCTTACTTGGTGATTCATAATAACTTTTCGAATC > tests/18S_palier4_ex.txt
+python3 dbread.py . bsubATCC13952.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_0.txt` > tests/bsub_palier2_test_0.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_0.txt` > tests/bsub_palier4_test_0.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_1.txt` > tests/bsub_palier2_test_1.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_1.txt` > tests/bsub_palier4_test_1.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_2.txt` > tests/bsub_palier2_test_2.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_2.txt` > tests/bsub_palier4_test_2.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_3.txt` > tests/bsub_palier2_test_3.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_3.txt` > tests/bsub_palier4_test_3.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_4.txt` > tests/bsub_palier2_test_4.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_4.txt` > tests/bsub_palier4_test_4.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_5.txt` > tests/bsub_palier2_test_5.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_5.txt` > tests/bsub_palier4_test_5.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_6.txt` > tests/bsub_palier2_test_6.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_6.txt` > tests/bsub_palier4_test_6.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_7.txt` > tests/bsub_palier2_test_7.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_7.txt` > tests/bsub_palier4_test_7.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_8.txt` > tests/bsub_palier2_test_8.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_8.txt` > tests/bsub_palier4_test_8.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_9.txt` > tests/bsub_palier2_test_9.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_9.txt` > tests/bsub_palier4_test_9.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_10.txt` > tests/bsub_palier2_test_10.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_10.txt` > tests/bsub_palier4_test_10.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_11.txt` > tests/bsub_palier2_test_11.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_11.txt` > tests/bsub_palier4_test_11.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_12.txt` > tests/bsub_palier2_test_12.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_12.txt` > tests/bsub_palier4_test_12.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_13.txt` > tests/bsub_palier2_test_13.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_13.txt` > tests/bsub_palier4_test_13.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_14.txt` > tests/bsub_palier2_test_14.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_14.txt` > tests/bsub_palier4_test_14.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_15.txt` > tests/bsub_palier2_test_15.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_15.txt` > tests/bsub_palier4_test_15.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_16.txt` > tests/bsub_palier2_test_16.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_16.txt` > tests/bsub_palier4_test_16.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_17.txt` > tests/bsub_palier2_test_17.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_17.txt` > tests/bsub_palier4_test_17.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_18.txt` > tests/bsub_palier2_test_18.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_18.txt` > tests/bsub_palier4_test_18.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_19.txt` > tests/bsub_palier2_test_19.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_19.txt` > tests/bsub_palier4_test_19.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_20.txt` > tests/bsub_palier2_test_20.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_20.txt` > tests/bsub_palier4_test_20.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_21.txt` > tests/bsub_palier2_test_21.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_21.txt` > tests/bsub_palier4_test_21.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_22.txt` > tests/bsub_palier2_test_22.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_22.txt` > tests/bsub_palier4_test_22.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_23.txt` > tests/bsub_palier2_test_23.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_23.txt` > tests/bsub_palier4_test_23.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_24.txt` > tests/bsub_palier2_test_24.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_24.txt` > tests/bsub_palier4_test_24.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_25.txt` > tests/bsub_palier2_test_25.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_25.txt` > tests/bsub_palier4_test_25.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_26.txt` > tests/bsub_palier2_test_26.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_26.txt` > tests/bsub_palier4_test_26.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_27.txt` > tests/bsub_palier2_test_27.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_27.txt` > tests/bsub_palier4_test_27.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_28.txt` > tests/bsub_palier2_test_28.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_28.txt` > tests/bsub_palier4_test_28.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_29.txt` > tests/bsub_palier2_test_29.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_29.txt` > tests/bsub_palier4_test_29.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_30.txt` > tests/bsub_palier2_test_30.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_30.txt` > tests/bsub_palier4_test_30.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_31.txt` > tests/bsub_palier2_test_31.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_31.txt` > tests/bsub_palier4_test_31.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_32.txt` > tests/bsub_palier2_test_32.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_32.txt` > tests/bsub_palier4_test_32.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_33.txt` > tests/bsub_palier2_test_33.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_33.txt` > tests/bsub_palier4_test_33.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_34.txt` > tests/bsub_palier2_test_34.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_34.txt` > tests/bsub_palier4_test_34.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_35.txt` > tests/bsub_palier2_test_35.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_35.txt` > tests/bsub_palier4_test_35.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_36.txt` > tests/bsub_palier2_test_36.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_36.txt` > tests/bsub_palier4_test_36.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_37.txt` > tests/bsub_palier2_test_37.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_37.txt` > tests/bsub_palier4_test_37.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_38.txt` > tests/bsub_palier2_test_38.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_38.txt` > tests/bsub_palier4_test_38.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_39.txt` > tests/bsub_palier2_test_39.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_39.txt` > tests/bsub_palier4_test_39.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_40.txt` > tests/bsub_palier2_test_40.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_40.txt` > tests/bsub_palier4_test_40.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_41.txt` > tests/bsub_palier2_test_41.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_41.txt` > tests/bsub_palier4_test_41.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_42.txt` > tests/bsub_palier2_test_42.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_42.txt` > tests/bsub_palier4_test_42.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_43.txt` > tests/bsub_palier2_test_43.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_43.txt` > tests/bsub_palier4_test_43.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_44.txt` > tests/bsub_palier2_test_44.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_44.txt` > tests/bsub_palier4_test_44.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_45.txt` > tests/bsub_palier2_test_45.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_45.txt` > tests/bsub_palier4_test_45.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_46.txt` > tests/bsub_palier2_test_46.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_46.txt` > tests/bsub_palier4_test_46.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_47.txt` > tests/bsub_palier2_test_47.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_47.txt` > tests/bsub_palier4_test_47.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_48.txt` > tests/bsub_palier2_test_48.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_48.txt` > tests/bsub_palier4_test_48.txt
+python3 dbalign.py bsubATCC13952.txt.fasta `tail -n 1 tests/bsubATCC13952.txt_test_49.txt` > tests/bsub_palier2_test_49.txt
+python3 myblast.py . bsubATCC13952.txt `tail -n 1 tests/bsubATCC13952.txt_test_49.txt` > tests/bsub_palier4_test_49.txt
+python3 alignstats.py 3852 3383967 ATTTGCAGTTTAACATTGTAATCCGGACGATCTATGCAGCCGGAGGACATGCTTTTATGC 1,-2 60 all
+1.33 1.12 0.62 1.19 0.00 146182740 2e-27 116
+python3 alignstats.py 3852 3383967 ATTTGCAGTTTAACATTGTAATCCGGACGATCTATGCAGCCGGAGGACATGCTTTTATGC 1,-1 60 all
+1.10 0.55 0.33 2.00 -2.00 101440029 8e-22 96
+python3 alignstats.py 3852 3383967 ATTTGCAGTTTAACATTGTAATCCGGACGATCTATGCAGCCGGAGGACATGCTTTTATGC 1,-3 60 all
+1.37 1.31 0.71 1.05 0.00 153181794 2e-28 119
+python3 alignstats.py 3852 3383967 ATTTGCAGTTTAACATTGTAATCCGGACGATCTATGCAGCCGGAGGACATGCTTTTATGC 1,-4 60 all
+1.38 1.36 0.74 1.02 0.00 156692877 1e-28 120
+python3 dbalign.py bsubATCC13952.txt.fasta ATTTGCAGTTTAACATTGTAATCCGGACGATCTATGCAGCCGGAGGACATGCTTTTATGC > tests/bsub_palier2_ex.txt
+python3 myblast.py . bsubATCC13952.txt ATTTGCAGTTTAACATTGTAATCCGGACGATCTATGCAGCCGGAGGACATGCTTTTATGC > tests/bsub_palier4_ex.txt
