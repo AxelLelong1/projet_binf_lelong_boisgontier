@@ -97,32 +97,44 @@ def read_sequence_type(nin_path):
 
 # ---------- NSQ FILE ---------- #
 
-def decode_ncbi_na2(byte_array):
+def decode_ncbi_na2(byte_array, debug=False):
     """Decode NCBI Na2 packed nucleotide sequence (4 bases per byte).
-    
+
     Args:
-        seq_bytes: bytes object contenant la séquence encodée.
-        length: longueur exacte de la séquence en bases.
-    
-    Retourne une string de nucléotides A,C,G,T.
+        byte_array: bytes object containing the packed sequence.
+
+    Returns:
+        String of nucleotides A,C,G,T.
     """
     if not byte_array:
         return ""
 
-    # Dernier octet = le remainder
-    remainder = byte_array[-1] >> 0 & 0b11
+    # Last byte: last 2 bits indicate how many bases are valid in the last byte (0 means all 4 are valid)
+    remainder = byte_array[-1] & 0b11
     packed_data = byte_array
 
     seq = ""
-    for b in packed_data:
-        for shift in [6, 4, 2, 0]:
-            bits = (b >> shift) & 0b11
-            seq += "ACGT"[bits]
+    for i, b in enumerate(packed_data):
+        if b == 0 and i == len(packed_data) - 1:
+            continue
+        # For all bytes except the last, decode all 4 bases
+        if i < len(packed_data) - 1:
+            for shift in [6, 4, 2, 0]:
+                bits = (b >> shift) & 0b11
+                seq += "ACGT"[bits]
+        else:
+            # For last byte, only decode 'remainder' bases if remainder != 0, else decode all 4
+            num_bases = remainder if remainder != 0 else 4
+            for shift in [6, 4, 2, 0][:num_bases]:
+                bits = (b >> shift) & 0b11
+                seq += "ACGT"[bits]
 
-    # Supprimer les bases non valides à la fin si remainder < 4
-    if remainder != 0 and remainder < 4:
-        seq = seq[:-(4 - remainder)]
-    
+    if debug:
+        print(f"Decoded sequence: {seq}")
+        print(f"Last byte remainder: {remainder}")
+        print(f"Packed data length: {len(packed_data)} bytes")
+        print(f"Packed data: {[f'{b:08b}' for b in packed_data]}")
+
     return seq
 
 def read_sequences(seq, ambig, nsq_path):
