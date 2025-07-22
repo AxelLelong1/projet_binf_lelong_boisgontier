@@ -148,7 +148,7 @@ def read_sequences(seq, ambig, nsq_path):
         
         for i in range(len(seq) - 1):
             start = int(seq[i])
-            end = int(seq[i + 1])
+            end = int(ambig[i])
             length_bytes = (end - start)
 
             f.seek(start)
