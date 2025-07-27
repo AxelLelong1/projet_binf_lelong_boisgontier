@@ -103,59 +103,52 @@ def compute_alpha(H, lmbda):
     return lmbda / H if H != 0 else 0.0
 
 def compute_beta(smin, smax):
-    return -2 if (smax == 1 and smin == -1) or (smax == 2 and smin == -3) else 0
+    # Cas classiques d'alignement local où beta vaut -2
+    if (smax == 1 and smin == -1) or (smax == 2 and smin == -3):
+        return -2
+    # Cas où smax=1 et smin=-2 (comme souvent 1,-2)
+    if smax == 1 and smin == -2:
+        return -2
+    # Autres cas à vérifier si besoin, sinon 0
+    return 0
 
 def compute_adj(Nseq, Nnuc, M, alpha, beta, lmbda, K):
-    from math import log, floor, ceil, sqrt
-
-    def h(e):
-        return beta + (alpha / lmbda) * (log(K) + log((M - e) * (Nnuc - Nseq * e)))
-
     mb = M * Nseq + Nnuc
     c = Nnuc * M - max(Nnuc, M) / K
 
-    # Protection contre racine carrée négative
+    # Discriminant pour racine carrée (protection)
     discriminant = mb ** 2 - 4 * Nseq * c
     if discriminant < 0:
-        return 1
+        return 1  # valeur de sécurité
 
+    emax = 2 * c / (mb + math.sqrt(discriminant))
     emin = 0
-    emax = 2 * c / (mb + sqrt(discriminant))
 
-    converged = False
-    e = 0
-    enext = 0
-    for k in range(20):
-        e = enext
-        try:
-            ebar = h(e)
-        except ValueError:
-            break  # log invalide
-        if ebar > e:
-            emin = e
-        if abs(ebar - e) <= 1.0:
-            converged = True
-            break
-        if emin == emax:
-            break
-        else:
-            emax = e
-        if emin <= ebar < emax:
-            enext = ebar
-        else:
-            if k == 0:
-                enext = emax
-            else:
-                enext = (emin + emax) / 2
+    def h(e):
+        val = (M - e) * (Nnuc - Nseq * e)
+        if val <= 0:
+            # log impossible => retourner un grand négatif pour forcer e < h(e)
+            return float('-inf')
+        return beta + (alpha / lmbda) * (math.log(K) + math.log(val))
 
-    res = int(floor(emin))
-    if converged:
-        e_ceil = ceil(emin)
-        try:
-            if e_ceil <= emax and h(e_ceil) >= e_ceil:
-                res = int(floor(e_ceil))
-        except:
-            pass
+    # dichotomie classique
+    for _ in range(30):
+        mid = (emin + emax) / 2
+        hmid = h(mid)
+        if hmid > mid:
+            emin = mid
+        else:
+            emax = mid
+        if abs(hmid - mid) < 1e-5:
+            break
+
+    res = int(math.floor(emin))
+
+    # Vérification complémentaire (optionnelle)
+    e_ceil = math.ceil(emin)
+    if e_ceil <= emax and h(e_ceil) >= e_ceil:
+        res = int(math.floor(e_ceil))
+
     return res
 
 def compute_searchsp(Nseq, Nnuc, M, alpha, beta, lmbda, K):
