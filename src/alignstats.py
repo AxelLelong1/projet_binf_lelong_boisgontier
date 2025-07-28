@@ -167,9 +167,9 @@ def main():
     Nseq, Nnuc, seq, rwd, pen, score, cmd = parse_args()
     freqs = count_freqs(seq)
     score_probs_list, score_probs_dict = get_score_dist(freqs, rwd, pen)
-    prob = list(range(rwd, pen-1, -1)) 
-    smax = max(prob)
-    smin = min(prob)
+    #prob = list(range(rwd, pen-1, -1)) 
+    smax = max(score_probs_dict)
+    smin = min(score_probs_dict)
 
     lmbda = solve_lambda(score_probs_list)
     H = compute_H(lmbda, smax, score_probs_list)
