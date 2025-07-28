@@ -33,7 +33,8 @@ def get_score_dist(freqs_seq, rwd, pen):
             score = sigma[(b1, b2)]
             C[score] = C.get(score, 0) + freqs_seq[b1] * fdb[b2]
     # Ajouter les scores manquants
-    for s in [1, 0, -1, -2]:
+    all_possible_scores = set(sigma.values())
+    for s in range(min(all_possible_scores), max(all_possible_scores) + 1):
         if s not in C:
             C[s] = 0.0
     total = sum(C.values())
@@ -106,9 +107,6 @@ def compute_beta(smin, smax):
     # Cas classiques d'alignement local où beta vaut -2
     if (smax == 1 and smin == -1) or (smax == 2 and smin == -3):
         return -2
-    # Cas où smax=1 et smin=-2 (comme souvent 1,-2)
-    if smax == 1 and smin == -2:
-        return -2
     # Autres cas à vérifier si besoin, sinon 0
     return 0
 
@@ -169,8 +167,10 @@ def main():
     Nseq, Nnuc, seq, rwd, pen, score, cmd = parse_args()
     freqs = count_freqs(seq)
     score_probs_list, score_probs_dict = get_score_dist(freqs, rwd, pen)
-    smax = max(score_probs_dict.keys())
-    smin = min(score_probs_dict.keys())
+    prob = list(range(rwd, pen-1, -1)) 
+    smax = max(prob)
+    smin = min(prob)
+
     lmbda = solve_lambda(score_probs_list)
     H = compute_H(lmbda, smax, score_probs_list)
     sigma = get_score_matrix(rwd, pen)

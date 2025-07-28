@@ -5,15 +5,16 @@ from asn1 import Decoder, Types
 
 
 # ---------- NIN FILE ---------- #
- 
-def read_null_terminated(data, offset):
-    while data[offset] == 0:
-        offset += 1
-    start = offset
-    while data[offset] != 0:
-        offset += 1
-    string = data[start:offset].decode('utf-8')
-    return string, offset + 1
+
+def read_len_prefixed_string(data, offset):
+    """
+    Lit une chaîne préfixée par sa longueur (1 octet), puis retourne la chaîne et l'offset suivant.
+    """
+    length = data[offset]
+    offset += 1
+    string = data[offset:offset + length].decode('utf-8')
+    offset += length
+    return string, offset
 
 def read_sequence_type(nin_path):
     """
@@ -29,10 +30,15 @@ def read_sequence_type(nin_path):
     sequence_type = struct.unpack_from(">I", data, 4)[0]
 
     offset = 12  # Skip format-version and sequence-type + 4 bits
-    
-    title, offset = read_null_terminated(data, offset)
-    volume, offset = read_null_terminated(data, offset)
-    create_date, offset = read_null_terminated(data, offset)
+    while (data[offset] == 0):
+        offset += 1
+    title, offset = read_len_prefixed_string(data, offset)
+    while (data[offset] == 0):
+        offset += 1
+    volume, offset = read_len_prefixed_string(data, offset)
+    while (data[offset] == 0):
+        offset += 1
+    create_date, offset = read_len_prefixed_string(data, offset)
     while (offset % 4 != 0):
         offset += 1 # after create date, offset is aligned on base 4
 
