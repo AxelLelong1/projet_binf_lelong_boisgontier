@@ -47,49 +47,40 @@ def generate_hsp(hsw, fasta_dict, W):
 def extend_hsp(seq_query, seq_subject, q_start, s_start, W):
     T = 5
     dropoff = 20
-    score = sum(sub_matrix[(seq_query[q_start + k], seq_subject[s_start + k])] for k in range(W))
-    best_score = score
-
-    # Étendre à gauche
-    i, j = q_start - 1, s_start - 1
-    ql, sl = q_start, s_start
-    current_score = score
-
-    while i >= 0 and j >= 0:
-        current_score += sub_matrix[(seq_query[i], seq_subject[j])]
-        if current_score > best_score:
-            best_score = current_score
-            ql, sl = i, j
-        elif current_score < best_score - dropoff or current_score <= T:
-            break
+    
+    i, j = q_start, s_start 
+    scoreHSP = sum(sub_matrix[(seq_query[i + k], seq_subject[j + k])] for k in range(W))
+    # A gauche
+    score = scoreHSP
+    bestScore = scoreHSP
+    while ((score > (bestScore - dropoff)) and (score > T) and (i > 0) and (j > 0)):
+        score += sub_matrix[(seq_query[i], seq_subject[j])]
         i -= 1
         j -= 1
+        if score > bestScore:
+            bestScore = score
 
-    # Étendre à droite
+    ql, sl = i, j
+    
+    # A droite
     i, j = q_start + W, s_start + W
-    qr, sr = q_start + W, s_start + W
-    current_score = score
-
-    while i < len(seq_query) and j < len(seq_subject):
-        current_score += sub_matrix[(seq_query[i], seq_subject[j])]
-        if current_score > best_score:
-            best_score = current_score
-            qr, sr = i + 1, j + 1
-        elif current_score < best_score - dropoff or current_score <= T:
-            break
+    score = scoreHSP
+    bestScore = scoreHSP
+    while ((score > (bestScore - dropoff)) and (score > T) and (i < (len(seq_query))) and (j < (len(seq_subject)))):
+        score += sub_matrix[(seq_query[i], seq_subject[j])]
         i += 1
         j += 1
+        if score > bestScore:
+            bestScore = score
+    
+    qr, sr = i, j
 
-    # Calcul final du score
-    final_score = 0
-    for k in range(qr - ql):
-        final_score += sub_matrix[(seq_query[ql + k], seq_subject[sl + k])]
+    final_score = sum(sub_matrix[(seq_query[ql + k], seq_subject[sl + k])] for k in range(qr - ql))
 
     if final_score > T:
         return (ql, qr-1, sl, sr-1, qr - ql, final_score,
                 seq_query[ql:qr], seq_subject[sl:sr])
     return None
-
 
 # ---------- MAIN PART ---------- #
 
@@ -111,6 +102,7 @@ def main():
     for subject_id, subject_pos, query_pos, word in hsp:
         result = extend_hsp(query_seq, fasta_dict[subject_id], query_pos, subject_pos, W)
         if result is not None:
+
             q_start, q_end, s_start, s_end, taille, score, align_q, align_s = result
             align_key = (subject_id, s_start, s_end, q_start, q_end, score)
             if align_key not in seen:
@@ -118,21 +110,6 @@ def main():
                 print(f"{subject_id} {s_start} {s_end} {q_start} {q_end} {taille} {score}")
                 print(align_q)
                 print(align_s)
-
-# ------------ TESTS ------------ #
-#    # HSW
-#    hsw = generate_hsw(query_seq, W)
-#    print("HSW:")
-#    for word, positions in hsw.items():
-#        print(f"{word}: {positions}")
-#    print()
-#
-#    # HSP
-#    fasta_dict = fasta_to_dict(dbfasta)
-#    hsp = generate_hsp(hsw, fasta_dict, W)
-#    print("HSP:")
-#    for subject_id, subject_pos, query_pos, word in hsp:
-#        print(f"{word} | DB: {subject_id}:{subject_pos} <-> HSW:{query_pos}")
 
 if __name__ == "__main__":
     main()

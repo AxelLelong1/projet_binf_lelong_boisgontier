@@ -51,7 +51,7 @@ def read_sequence_type(nin_path):
     max_seq_length = struct.unpack_from('>I', data, offset)[0]
     offset += 4
 
-    print("Format Version:", format)
+    """ print("Format Version:", format)
     print("Sequence type:", sequence_type)
     
     print("title:", title)
@@ -66,17 +66,17 @@ def read_sequence_type(nin_path):
 
     print("header 1:", struct.unpack_from('>I', data, offset)[0])
     print("header 2:", struct.unpack_from('>I', data, offset+4)[0])
-    print("header 3:", struct.unpack_from('>I', data, offset+8)[0])
+    print("header 3:", struct.unpack_from('>I', data, offset+8)[0]) """
 
     offset+= (num_oids + 1) * 4
 
     # === Sequence Array ===
 
-    print("Start of Sequence array:", offset)
+    """ print("Start of Sequence array:", offset)
 
     print("seq 1:", struct.unpack_from('>I', data, offset)[0])
     print("seq 2:", struct.unpack_from('>I', data, offset+4)[0])
-    print("seq 3:", struct.unpack_from('>I', data, offset+8)[0])
+    print("seq 3:", struct.unpack_from('>I', data, offset+8)[0]) """
 
     sequence_array = []
     for i in range(num_oids + 1):  # +1 pour le dernier offset
@@ -86,11 +86,11 @@ def read_sequence_type(nin_path):
 
     # === Ambig Array ===
 
-    print("Start of Ambig Array:", offset)
+    """ print("Start of Ambig Array:", offset)
 
     print("ambig 1:", struct.unpack_from('>I', data, offset)[0])
     print("ambig 2:", struct.unpack_from('>I', data, offset+4)[0])
-    print("ambig 3:", struct.unpack_from('>I', data, offset+8)[0])
+    print("ambig 3:", struct.unpack_from('>I', data, offset+8)[0]) """
 
     ambig_array = []
     for i in range(num_oids + 1):  # idem

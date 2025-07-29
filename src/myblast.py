@@ -1,6 +1,5 @@
 import os
 import sys
-import tempfile
 from dbread import read_sequence_type, read_sequences, read_ids_from_file, print_fasta
 from dbalign import generate_hsw, fasta_to_dict, generate_hsp, extend_hsp
 from alignstats import get_score_dist, solve_lambda, compute_H, get_score_matrix, compute_K, compute_alpha, compute_beta, compute_searchsp, compute_E, compute_bitscore, count_freqs
@@ -21,9 +20,8 @@ def main():
     ids = read_ids_from_file(nhr)
 
     # --- Étape 2 : Écriture temporaire en FASTA ---
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".fasta") as tmpf:
-        fasta_path = tmpf.name
-        print_fasta(sequences, ids, fasta_path)
+    fasta_path = os.path.join(dbpath, f"{dbname}.fasta")
+    print_fasta(sequences, ids, fasta_path)
 
     # --- Étape 3 : Alignement ---
     W = 11
@@ -46,8 +44,8 @@ def main():
 
             freqs = count_freqs(query_seq)
             score_probs, prob_dict = get_score_dist(freqs, rwd, pen)
-            smax = max(prob_dict.keys())
-            smin = min(prob_dict.keys())
+            smax = max(prob_dict)
+            smin = min(prob_dict)
             sigma = get_score_matrix(rwd, pen)
             lmbda = solve_lambda(score_probs)
             H = compute_H(lmbda, smax, score_probs)
@@ -86,11 +84,16 @@ def main():
     min_eval = min(r["Evalue"] for r in results)
     kept = [r for r in results if abs(r["Evalue"] - min_eval) < 1e-15]
 
+    seen = set()
+
     for r in kept:
-        print(f"{r['subject_id']} {r['s_start']} {r['s_end']} {r['q_start']} {r['q_end']} {r['taille']} {r['score']}")
-        print(f"{r['lambda']:.2f} {r['H']:.2f} {r['K']:.2f} {r['alpha']:.2f} {r['beta']:.2f} {r['searchsp']} {r['Evalue']:.0e} {r['bitscore']}")
-        print(r['align_q'])
-        print(r['align_s'])
+        align_key = (subject_id, s_start, s_end, q_start, q_end, score)
+        if align_key not in seen:
+            seen.add(align_key)
+            print(f"{r['subject_id']} {r['s_start']} {r['s_end']} {r['q_start']} {r['q_end']} {r['taille']} {r['score']}")
+            print(f"{r['lambda']:.2f} {r['H']:.2f} {r['K']:.2f} {r['alpha']:.2f} {r['beta']:.2f} {r['searchsp']} {r['Evalue']:.0e} {r['bitscore']}")
+            print(r['align_q'])
+            print(r['align_s'])
 
     # Nettoyage du fichier temporaire
     os.remove(fasta_path)
